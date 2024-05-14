@@ -11,6 +11,9 @@ importers:
       ant-design-vue:
         specifier: 4.x
         version: 4.2.1(vue@3.4.27)
+      canvas-select:
+        specifier: ^2.21.0
+        version: 2.21.0
       vue:
         specifier: ^3.4.21
         version: 3.4.27
@@ -434,6 +437,10 @@ packages:
   braces@3.0.2:
     resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
     engines: {node: '>=8'}
+
+  canvas-select@2.21.0:
+    resolution: {integrity: sha512-IdBIpdQsEjBTou7idas6g4w5WNjhdn68xNv0MmozR7I4VmgeTkpE7laBkRI+KzbzxU9+8grGNweeu4Yxr2PSPg==}
+    engines: {node: '>=16.0.0'}
 
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
@@ -1040,6 +1047,8 @@ snapshots:
   braces@3.0.2:
     dependencies:
       fill-range: 7.0.1
+
+  canvas-select@2.21.0: {}
 
   chokidar@3.6.0:
     dependencies:

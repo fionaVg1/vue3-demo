@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "ant-design-vue": "4.x",
+    "canvas-select": "^2.21.0",
     "vue": "^3.4.21",
     "vue3-mic-recorder": "^1.0.3"
   },
