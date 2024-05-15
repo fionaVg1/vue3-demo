@@ -2,8 +2,8 @@
 
 <template>
   <div class="container">
-    <div class="part1" v-show="currentTab === 1">
-      <div class="desc">1、请找出下面的活动扳手</div>
+    <div class="part1" v-show="currentTab === 2">
+      <div class="desc">2、请找出下面的活动扳手</div>
       <a-card>
         <a-card-grid class="card-item" style="width: 25%">
           <a-image :width="200" :height="50" :src="img1" />
@@ -47,9 +47,9 @@
         </a-card-grid>
       </a-card>
     </div>
-    <div class="part2" v-show="currentTab === 2">
+    <div class="part2" v-show="currentTab === 3">
       <div class="desc">
-        2、对员工周一进行绩效评价并说明原因（可以输入答案或者点击语音开始）
+        3、对员工周一进行绩效评价并说明原因（可以输入答案或者点击语音开始）
       </div>
       <a-textarea
         id="result"
@@ -59,7 +59,7 @@
 
       <audio-recorder />
     </div>
-    <div class="part3" v-show="currentTab === 3">
+    <div class="part3" v-show="currentTab === 1">
       <div class="items">
         <div class="desc">
           1、识别出单线图中电缆、（识别出电缆终端头符号、识别出电缆中间头符号、识别出配电变压器、识别出带电指示器符号、识别出故障指示器、识别图中负荷开关的电气符号、识别图中断路器的电气符号、识别图中隔离刀闸的电气符号、识别图中接地刀闸的电气符号、识别图中跌落式熔断器的电气符识别图中避雷器的电气符号、识别图中电压互感器的电气符号、识别图中电流互感器的电气符号、识别出配电站、识别出开关站、识别出分支箱、识别出变压器台架）
@@ -75,8 +75,8 @@
           <canvas
             class="canvas-container"
             ref="canvasRef"
-            width="800"
-            height="500"
+            width="1000"
+            height="700"
           ></canvas>
         </div>
       </div>
@@ -113,7 +113,7 @@ const checked8= ref(false);
 const checked9= ref(false);
 const checked10= ref(false);
 
-const currentTab = ref(3);
+const currentTab = ref(1);
 const answerStr = ref(undefined);
 const canvasRef = ref();
 const instance = ref();
